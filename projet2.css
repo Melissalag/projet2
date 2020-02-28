@@ -1,0 +1,329 @@
+*{
+	box-sizing: border-box;
+	/*border:red solid 1px;*/
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+figure
+{
+   text-align:center;
+}
+.imageflottante
+{
+	border-radius: 50%;
+	border:#CE93D8 solid 1px;
+}
+#aside
+{
+    background-color:#BA68C8;
+    height:100%;
+    position:relative;
+	max-width:30%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-right:0px;
+    padding-left: 0px;
+    padding-bottom:30px;
+}
+#bas
+{
+	margin-bottom:230px;
+}
+#aside p
+{
+	max-width:85%;
+    text-align:justify;
+    margin-left:20px;
+    color:#424242;
+    font-weight:bold;
+}
+.normal
+{
+	color:#757575;
+}
+.normalcolonne
+{
+	color:#424242;
+}
+#conteneur
+{
+    display:flex;
+    flex-direction:row;
+
+}
+#entete div
+{
+	flex-direction:row;
+}
+h1
+{   
+    font-family: 'Roboto', sans-serif;
+	color:#424242;
+	margin-left: 35px;
+	font-size:40px;
+	font-weight: lighter;
+	margin-bottom:0px;
+}
+h1 span
+{
+	text-decoration: bold;
+}
+.texte-violet
+{
+	color:#BA68C8;
+}
+.space
+{
+	margin-right:15px;
+}
+h3
+{
+	color:#757575;
+	padding-bottom:60px;
+	margin-top:5px;
+}
+h3 span
+{
+	border-bottom:#424242 solid 2px;
+	color:#757575;
+    padding-bottom: 5px;
+    margin-left:35px;
+}
+h4
+{ 
+	font-size:25px;
+	margin-left:30px;
+	margin-right:5px;
+    border-bottom:#BA68C8 solid 2px;
+    padding-bottom:5px;
+    color:#212121;
+}
+h2
+{
+    margin-top:40px;
+    margin-left:0px;
+    text-align:center;
+    margin-bottom:40px;
+}
+mark
+{
+	background-color:#424242;
+    color:#BA68C8;
+}
+p
+{
+   font-family: 'Ubuntu', sans-serif;
+   text-align: justify;
+   margin-bottom:0;
+   margin:0;
+   padding:0;
+   color:#424242;
+}
+#entete
+{
+	width:100%;
+}
+#article2
+{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	margin-left: 0;
+}
+#article2 h6
+{
+	font-size:17px;
+	padding-bottom:3px;
+}
+#article2 span
+{
+	font-weight:normal;
+}
+ul
+{
+	list-style: none;
+	font-weight:bold;
+	color:#424242;
+}
+li
+{
+	margin-left:2px;
+}
+#descriptif
+{
+  width:50%;
+  height:10%;
+}
+.imgfor
+{
+	color:#BA68C8;
+	margin-right:15px;
+	margin-bottom:0;
+
+}
+.titre-surligne
+{
+	background-color:#424242;
+    color:#BA68C8;
+}
+#lois p
+{
+	text-align:center;
+}
+.texte-gris
+{
+	color:#424242;
+	flex-direction:row;
+	justify-content: space-between;
+	margin-left:25px;
+}
+.annee
+{
+	margin-left:23px;
+}
+#reference
+{
+	width:50%;
+}
+#reference2
+{
+	width:50%;
+}
+h5
+{
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom:10px;
+	margin:0;
+	color:#424242;
+	font-weight:bold;
+	font-size:18px;
+}
+.espace
+{
+	height: 50%;
+}
+.espacement
+{
+	height:10%;
+	padding-bottom:10px;
+}
+.trio
+{
+	display:flex;
+	width:80%;
+	margin-left:25px;
+	margin-bottom:30px;
+}
+.trio>div
+{
+	margin:5px;
+}
+.trio>div:nth-child(2)
+{
+	min-width:30%;
+}
+.trio p
+{
+	color:#757575;
+	font-weight:bold;
+}
+.trio .normal
+{
+	font-weight:normal;
+	padding-top:10px;
+}
+span
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#424242;
+}
+h6
+{
+	font-family:'Ubuntu';
+	font-size:15px;
+	font-weight:bold;
+	margin:5px;
+	margin-left:0;
+	color:#757575;
+}
+a
+{
+	color:#424242;
+	text-decoration:none;
+}
+@media only screen and (max-width:800px) {
+	#conteneur
+	{
+    display:flex;
+    flex-direction:column-reverse;
+	}
+	#aside
+    {
+     order:1;
+     justify-content:space-between;
+     min-width:100%;
+     position:relative;
+     text-align:center;
+    }
+	#en-tete
+	{
+    order:2;
+    width:100%;
+	}
+	h1
+	{
+	margin-left:5px;
+	}
+	h3
+	{
+	 font-size:12px;
+	 margin-left:0;
+	 padding-left:0;
+	}
+	h3 span
+	{
+	 margin-left:5px;
+	}
+	h4
+	{
+	 font-size:17px;
+	 margin-left:5px;
+	}
+	h5
+	{
+	font-size:15px;
+	}
+    .trio
+	{
+   	width:100%;
+   	flex-wrap:wrap;
+   	flex-direction:column;
+   	margin-left:0;
+   	margin-right:0;
+   	;
+    }
+    #article1
+    {
+     width:80%;
+    }
+   #article2
+   {
+   	/*min-width:100%;*/
+   	flex-wrap:wrap;
+   	flex-direction:column;
+   	justify-content:space-around;
+   	margin-left:0;	
+   }
+   .trio div
+  {
+	margin-right:20px;
+  }
+  ul
+  {
+  	padding-left:0;
+  }
+
+}
